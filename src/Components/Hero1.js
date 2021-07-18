@@ -1,6 +1,8 @@
+
+
 const Hero1 = () => {
     return ( 
-        <div className="mainDiv">
+        <div className="mainDiv Hero1">
             <div className="text">
                 <h2>Making the most of the ever-growing <span className="colorChange">Information Technology</span></h2>
                 <p className="smallText">Managed by a team of professional experts with extensive experience and impressive track records</p>

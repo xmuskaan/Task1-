@@ -1,7 +1,7 @@
 const Features = () => {
     return ( 
-        <div className="mainDiv">
-            <h3>Product and Service</h3>
+        <div className="mainDiv ">
+            <h3 className="featHead">Product and Service</h3>
 
             <div className="features">
                 <div>

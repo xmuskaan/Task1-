@@ -14,11 +14,12 @@ const Navbar = () => {
                     <i className={Click ? "fa fa-times" : "fas fa-gem"} />  
                 </div>
                     <div className={Click? "NavList active" : "NavList"}>
-                        <span className="Home navLinks" to="/"onClick={closeMobileMenu}>Services</span>
-                        <span className="AboutUs navLinks" to="/about"onClick={closeMobileMenu}>Product</span>
-                        <span className="Products navLinks" to="/products"onClick={closeMobileMenu}>Technology</span>
-                        <span className="ContactUs navLinks" to="/contactus"onClick={closeMobileMenu}>Client</span>
-                        <span className="ContactUs navLinks" to="/contactus"onClick={closeMobileMenu}>Partner</span>
+                        <span className="Services navLinks" to="/"onClick={closeMobileMenu}>Services</span>
+                        <span className="Products navLinks" to="/about"onClick={closeMobileMenu}>Product</span>
+                        <span className="Technology navLinks" to="/products"onClick={closeMobileMenu}>Technology</span>
+                        <span className="About navLinks" to="/products"onClick={closeMobileMenu}>About<i class="fas fa-angle-down"/></span>
+                        <span className="Client navLinks" to="/contactus"onClick={closeMobileMenu}>Client<i class="fas fa-angle-down"/></span>
+                        <span className="Partner navLinks" to="/contactus"onClick={closeMobileMenu}>Partner</span>
                 </div>   
                 <div className="navIcons">
                     <i className="">Home</i>

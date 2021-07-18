@@ -1,0 +1,112 @@
+*{
+  margin:0;
+  padding:0;
+}
+.NavBar{
+  height:100px;
+  border-bottom:2px solid #f0f0f0
+}
+
+.navCon{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  position:relative;
+  top:35px;
+}
+
+.NavList>span{
+  margin-left:65px
+}
+.ReadMore{
+  width:120px;
+  height:40px;
+  background-color: #EE4248;
+  color:#fff;
+  text-align: center;
+  border:none;
+}
+
+.colorChange{
+  color:#EE4248;
+}
+
+.Hero1{
+  height:75vh;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.text>h2{
+  font-size: 40px;
+  width:545px;
+  margin-bottom:20px;
+}
+
+.text>p{
+  width:520px;
+  margin-bottom: 20px;
+
+}
+
+.Hero2{
+  background-color: #F7F7F7;
+  height:75vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.picture2{
+  margin-top: 100px;
+}
+.text2>h2{
+  font-size: 32px;
+  width:454px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.text2>p{
+  width:520px;
+}
+
+.featHead{
+  text-align: center;
+  font-size: 32px;
+  margin-top:80px;
+}
+
+.features{
+  display:flex;
+  width: 1100px;
+  margin: auto;
+  justify-content: space-around;
+}
+.smallText{
+  font-size:18px;
+}
+
+.features>div>p{
+  width:320px;
+  margin:30px 0px;
+}
+
+.foot1{
+  width:1100px;
+  margin:auto;
+  height:150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.foot2{
+  background-color: #EE4248;
+  height:50px;
+  color:#fff;
+}
+
+.foot2>p{
+  text-align: center;
+  padding:13px 0px;
+  font-size:18px;
+}
