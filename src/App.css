@@ -15,9 +15,29 @@
   top:35px;
 }
 
-.NavList>span{
-  margin-left:65px
+.navCon>img{
+  position: relative;
+    top: -14px;
 }
+
+.NavList>span{
+  margin-left:65px;
+  color:rgba(31, 46, 53, 0.8);
+}
+.openHamMenu{
+  display: none;
+}
+.fa-angle-down{
+  padding-left: 11px;
+  font-size: 12px;
+}
+
+.navIcons>i{
+  padding:10px;
+  color:rgba(31, 46, 53, 0.8);
+
+}
+
 .ReadMore{
   width:120px;
   height:40px;
@@ -25,6 +45,11 @@
   color:#fff;
   text-align: center;
   border:none;
+  cursor:pointer;
+}
+
+.ReadMore:hover{
+  background-color:#ff5b5b;
 }
 
 .colorChange{
@@ -34,7 +59,7 @@
 .Hero1{
   height:75vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 100px;
 }
 
@@ -49,6 +74,10 @@
   margin-bottom: 20px;
 
 }
+.picture img{
+  width: 471px;
+  height: 420px;
+}
 
 .Hero2{
   background-color: #F7F7F7;
@@ -56,8 +85,10 @@
   display: flex;
   justify-content: space-evenly;
 }
-.picture2{
+.picture2 img{
   margin-top: 100px;
+  width: 450px;
+  height: 400px;
 }
 .text2>h2{
   font-size: 32px;
@@ -73,7 +104,7 @@
 .featHead{
   text-align: center;
   font-size: 32px;
-  margin-top:80px;
+  margin-top:70px;
 }
 
 .features{
@@ -90,13 +121,33 @@
   width:320px;
   margin:30px 0px;
 }
-
+.features>div>i{
+  font-size: 60px;
+  color:#EE4248;
+  padding-top: 40px;
+}
 .foot1{
   width:1100px;
   margin:auto;
   height:150px;
   display: flex;
   justify-content: space-evenly;
+  padding-top:100px;
+  padding-bottom: 10px;
+}
+
+.foot1>div{
+  padding-right:15px;
+}
+
+.footerimg{
+  width: 400px;
+  height: 100px;
+}
+
+.logo{
+  width: 71px;
+  height: 56px;
 }
 
 .foot2{
@@ -109,4 +160,83 @@
   text-align: center;
   padding:13px 0px;
   font-size:18px;
+}
+
+.div2f{
+  position: relative;
+  top: 58px;
+}
+
+/***Responsive***/
+
+@media(max-width:500px) {
+  /*Navbar*/
+  .NavBar{
+    height: 80px;
+    width:150vw;
+    }
+
+.container{
+    width:420px;
+}
+
+.navCon{
+    display:flex;
+    }
+
+.navCon .Title{
+    text-align: left;
+    margin-top:12px;
+}
+.navCon>img{
+  left:-39px;
+
+}
+
+.openHamMenu{
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top:5px;
+  right:-90px;
+}
+.NavList {
+  flex-direction: column;
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  top: 80px;
+  left: -100%;
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.active {
+  background: #242222;
+  left: 0;
+  opacity: 1;
+  transition: all 1s ease;
+  z-index: 1;
+}
+
+.NavList>span{
+  text-align: center;
+  padding:50px;
+  margin-left:0px;    
+  font-size:20px;
+
+}
+
+.navLinks:hover {
+  background-color:#be286e;
+  transition:0.4s ease-in ;
+}
+.navLinks a:hover {
+  color:#fff;
+  font-style:normal;
+  transition:0.4s ease-in ;
+}
+
+
+
 }

@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import logo from "../Images/Logo.png";
+
 const Navbar = () => {
     const [Click, setClick] = useState(false);
     
@@ -9,9 +11,9 @@ const Navbar = () => {
     <nav className="NavBar">
         <div className="container">
             <div className="navCon">
-                <h3 className="Title"> DSI </h3>
+            <img className="logo"src={logo} alt="logo"/>
                 <div className="openHamMenu" onClick={handleClick}>
-                    <i className={Click ? "fa fa-times" : "fas fa-gem"} />  
+                    <i className={Click ? "fa fa-times" : "fas fa-align-right"} />  
                 </div>
                     <div className={Click? "NavList active" : "NavList"}>
                         <span className="Services navLinks" to="/"onClick={closeMobileMenu}>Services</span>
@@ -20,12 +22,13 @@ const Navbar = () => {
                         <span className="About navLinks" to="/products"onClick={closeMobileMenu}>About<i class="fas fa-angle-down"/></span>
                         <span className="Client navLinks" to="/contactus"onClick={closeMobileMenu}>Client<i class="fas fa-angle-down"/></span>
                         <span className="Partner navLinks" to="/contactus"onClick={closeMobileMenu}>Partner</span>
-                </div>   
-                <div className="navIcons">
-                    <i className="">Home</i>
-                    <i className="">Message</i>
-                    <i className="">Connect</i>
-                </div>             
+                     
+                        <div className="navIcons">
+                            <i className="fas fa-home"></i>
+                            <i className="far fa-envelope"></i>
+                            <i className="fas fa-project-diagram"></i>
+                        </div>       
+                    </div>             
             </div>
         </div>
     </nav>

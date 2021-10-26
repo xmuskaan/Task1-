@@ -1,4 +1,4 @@
-
+import Dev from "../Images/Dev.png";
 
 const Hero1 = () => {
     return ( 
@@ -10,7 +10,7 @@ const Hero1 = () => {
             </div>
 
             <div className="picture">
-                <img src="" alt="not yet found"/>
+                <img src={Dev} alt="not yet found"/>
             </div>
         </div>
      );
